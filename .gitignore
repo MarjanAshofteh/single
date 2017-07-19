@@ -1,0 +1,7 @@
+# Ignore configuration files that may contain sensitive information.
+sites/*/*settings*.php
+lock/confing.php
+
+# Ignore paths that contain generated content.
+*bin/
+.vs
