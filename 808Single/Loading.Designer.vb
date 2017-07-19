@@ -22,43 +22,48 @@ Partial Class Loading
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 99.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.MediumSlateBlue
-        Me.Label1.Location = New System.Drawing.Point(-15, -3)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(287, 152)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "808"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.SystemColors.ControlText
+        Me.Label2.BackColor = System.Drawing.Color.White
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.MediumTurquoise
-        Me.Label2.Location = New System.Drawing.Point(71, 138)
+        Me.Label2.ForeColor = System.Drawing.Color.Indigo
+        Me.Label2.Location = New System.Drawing.Point(64, 166)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(124, 29)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Loading ..."
         '
+        'Label1
+        '
+        Me.Label1.AutoEllipsis = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label1.Font = New System.Drawing.Font("IRANSans", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.Black
+        Me.Label1.Location = New System.Drawing.Point(12, 71)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(226, 70)
+        Me.Label1.TabIndex = 3
+        Me.Label1.Text = "فایل در حال رمز گشایی می باشد و زمان آن با توجه به حجم فیلم متفاوت است. لطفا منتظ" &
+    "ر بمانید"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Label1.UseCompatibleTextRendering = True
+        '
         'Loading
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ControlText
-        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(248, 176)
-        Me.Controls.Add(Me.Label2)
+        Me.BackColor = System.Drawing.Color.White
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.ClientSize = New System.Drawing.Size(250, 250)
         Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Label2)
+        Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Loading"
         Me.ShowIcon = False
@@ -70,7 +75,6 @@ Partial Class Loading
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents Label1 As Label
 End Class

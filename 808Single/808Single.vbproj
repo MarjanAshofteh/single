@@ -90,7 +90,7 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Loader.ico</ApplicationIcon>
+    <ApplicationIcon>808.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>427DF89BB4A4EF63C3F439E0C1562FEB18E031E1</ManifestCertificateThumbprint>
@@ -103,6 +103,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -131,6 +134,7 @@
   <ItemGroup>
     <Compile Include="config.vb" />
     <Compile Include="CryptoStuff.vb" />
+    <Compile Include="CustomFont.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -197,6 +201,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="808Single_TemporaryKey.pfx" />
+    <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -209,13 +214,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="resources\exit.png" />
-  </ItemGroup>
-  <ItemGroup>
+    <Content Include="808.ico" />
     <Content Include="frmLogoBackground.png" />
-    <Content Include="Loader.ico" />
+    <None Include="resources\IRANSans.ttf" />
+    <None Include="resources\loding.gif" />
+    <None Include="resources\help.png" />
+    <None Include="resources\single.png" />
+    <None Include="resources\negative.png" />
+    <None Include="resources\close.png" />
     <None Include="resources\offline.png" />
-    <None Include="resources\BG.jpg" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">

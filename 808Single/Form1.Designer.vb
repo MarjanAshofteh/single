@@ -29,41 +29,44 @@ Partial Class Form1
         Me.BtnHelp = New System.Windows.Forms.PictureBox()
         Me.BtnSiteLink = New System.Windows.Forms.PictureBox()
         Me.BtnAbout808 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.close_icon = New System.Windows.Forms.PictureBox()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.BtnActivateOffline = New System.Windows.Forms.PictureBox()
+        Me.minimize_icon = New System.Windows.Forms.PictureBox()
         Me.lblStatus = New System.Windows.Forms.Label()
         Me.txtPhone = New System.Windows.Forms.TextBox()
         Me.txtEmail = New System.Windows.Forms.TextBox()
         Me.txtName = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.BtnActivate, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BtnHelp, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BtnSiteLink, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BtnAbout808, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.close_icon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BtnActivateOffline, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.minimize_icon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TxtPass
         '
         Me.TxtPass.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TxtPass.Font = New System.Drawing.Font("Rockwell", 12.25!, System.Drawing.FontStyle.Bold)
+        Me.TxtPass.Font = New System.Drawing.Font("Tahoma", 12.25!)
         Me.TxtPass.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.TxtPass.Location = New System.Drawing.Point(143, 446)
+        Me.TxtPass.Location = New System.Drawing.Point(159, 403)
         Me.TxtPass.Name = "TxtPass"
-        Me.TxtPass.Size = New System.Drawing.Size(199, 20)
-        Me.TxtPass.TabIndex = 0
+        Me.TxtPass.Size = New System.Drawing.Size(183, 20)
+        Me.TxtPass.TabIndex = 3
         Me.TxtPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'BtnActivate
         '
         Me.BtnActivate.BackColor = System.Drawing.Color.Transparent
         Me.BtnActivate.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BtnActivate.Location = New System.Drawing.Point(337, 524)
+        Me.BtnActivate.Location = New System.Drawing.Point(155, 436)
         Me.BtnActivate.Name = "BtnActivate"
-        Me.BtnActivate.Size = New System.Drawing.Size(62, 62)
+        Me.BtnActivate.Size = New System.Drawing.Size(193, 39)
         Me.BtnActivate.TabIndex = 1
         Me.BtnActivate.TabStop = False
         Me.ToolTip1.SetToolTip(Me.BtnActivate, "فعالسازی آنلاین")
@@ -72,9 +75,9 @@ Partial Class Form1
         '
         Me.BtnHelp.BackColor = System.Drawing.Color.Transparent
         Me.BtnHelp.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BtnHelp.Location = New System.Drawing.Point(99, 524)
+        Me.BtnHelp.Location = New System.Drawing.Point(198, 612)
         Me.BtnHelp.Name = "BtnHelp"
-        Me.BtnHelp.Size = New System.Drawing.Size(60, 62)
+        Me.BtnHelp.Size = New System.Drawing.Size(105, 22)
         Me.BtnHelp.TabIndex = 2
         Me.BtnHelp.TabStop = False
         Me.ToolTip1.SetToolTip(Me.BtnHelp, "راهنما")
@@ -83,9 +86,9 @@ Partial Class Form1
         '
         Me.BtnSiteLink.BackColor = System.Drawing.Color.Transparent
         Me.BtnSiteLink.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BtnSiteLink.Location = New System.Drawing.Point(403, 32)
+        Me.BtnSiteLink.Location = New System.Drawing.Point(349, 612)
         Me.BtnSiteLink.Name = "BtnSiteLink"
-        Me.BtnSiteLink.Size = New System.Drawing.Size(89, 21)
+        Me.BtnSiteLink.Size = New System.Drawing.Size(105, 22)
         Me.BtnSiteLink.TabIndex = 3
         Me.BtnSiteLink.TabStop = False
         Me.ToolTip1.SetToolTip(Me.BtnSiteLink, "ورود به سایت")
@@ -94,33 +97,33 @@ Partial Class Form1
         '
         Me.BtnAbout808.BackColor = System.Drawing.Color.Transparent
         Me.BtnAbout808.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BtnAbout808.Location = New System.Drawing.Point(12, 30)
+        Me.BtnAbout808.Location = New System.Drawing.Point(47, 612)
         Me.BtnAbout808.Name = "BtnAbout808"
-        Me.BtnAbout808.Size = New System.Drawing.Size(97, 21)
+        Me.BtnAbout808.Size = New System.Drawing.Size(105, 22)
         Me.BtnAbout808.TabIndex = 4
         Me.BtnAbout808.TabStop = False
         Me.ToolTip1.SetToolTip(Me.BtnAbout808, "درباره 808")
         '
-        'PictureBox1
+        'close_icon
         '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox1.Image = Global._808Single.My.Resources.Resources._exit
-        Me.PictureBox1.Location = New System.Drawing.Point(471, 7)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(21, 19)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 6
-        Me.PictureBox1.TabStop = False
-        Me.ToolTip1.SetToolTip(Me.PictureBox1, "خروج")
+        Me.close_icon.BackColor = System.Drawing.Color.Transparent
+        Me.close_icon.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.close_icon.Image = Global._808Single.My.Resources.Resources.close
+        Me.close_icon.Location = New System.Drawing.Point(479, 3)
+        Me.close_icon.Name = "close_icon"
+        Me.close_icon.Size = New System.Drawing.Size(21, 21)
+        Me.close_icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.close_icon.TabIndex = 6
+        Me.close_icon.TabStop = False
+        Me.ToolTip1.SetToolTip(Me.close_icon, "Close")
         '
         'PictureBox2
         '
         Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox2.Location = New System.Drawing.Point(161, 173)
+        Me.PictureBox2.Location = New System.Drawing.Point(159, 161)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(181, 62)
+        Me.PictureBox2.Size = New System.Drawing.Size(183, 64)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 22
         Me.PictureBox2.TabStop = False
@@ -130,71 +133,104 @@ Partial Class Form1
         '
         Me.BtnActivateOffline.BackColor = System.Drawing.Color.Transparent
         Me.BtnActivateOffline.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BtnActivateOffline.Location = New System.Drawing.Point(221, 524)
+        Me.BtnActivateOffline.Location = New System.Drawing.Point(176, 549)
         Me.BtnActivateOffline.Name = "BtnActivateOffline"
-        Me.BtnActivateOffline.Size = New System.Drawing.Size(61, 62)
+        Me.BtnActivateOffline.Size = New System.Drawing.Size(151, 30)
         Me.BtnActivateOffline.TabIndex = 23
         Me.BtnActivateOffline.TabStop = False
         Me.ToolTip1.SetToolTip(Me.BtnActivateOffline, "فعالسازی آفلاین")
         '
+        'minimize_icon
+        '
+        Me.minimize_icon.BackColor = System.Drawing.Color.Transparent
+        Me.minimize_icon.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.minimize_icon.Image = Global._808Single.My.Resources.Resources.negative
+        Me.minimize_icon.Location = New System.Drawing.Point(452, 3)
+        Me.minimize_icon.Name = "minimize_icon"
+        Me.minimize_icon.Size = New System.Drawing.Size(21, 21)
+        Me.minimize_icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.minimize_icon.TabIndex = 27
+        Me.minimize_icon.TabStop = False
+        Me.ToolTip1.SetToolTip(Me.minimize_icon, "Minimize")
+        '
         'lblStatus
         '
         Me.lblStatus.BackColor = System.Drawing.Color.Transparent
-        Me.lblStatus.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblStatus.ForeColor = System.Drawing.SystemColors.Info
-        Me.lblStatus.Location = New System.Drawing.Point(71, 492)
+        Me.lblStatus.Font = New System.Drawing.Font("IRANSans Medium", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblStatus.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.lblStatus.Location = New System.Drawing.Point(77, 478)
         Me.lblStatus.Name = "lblStatus"
-        Me.lblStatus.Size = New System.Drawing.Size(351, 16)
+        Me.lblStatus.Size = New System.Drawing.Size(351, 31)
         Me.lblStatus.TabIndex = 21
         Me.lblStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'txtPhone
         '
-        Me.txtPhone.BackColor = System.Drawing.Color.FromArgb(CType(CType(233, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(233, Byte), Integer))
+        Me.txtPhone.BackColor = System.Drawing.Color.White
         Me.txtPhone.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtPhone.Location = New System.Drawing.Point(135, 333)
+        Me.txtPhone.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPhone.ForeColor = System.Drawing.Color.Silver
+        Me.txtPhone.Location = New System.Drawing.Point(125, 292)
         Me.txtPhone.MaxLength = 11
         Me.txtPhone.Multiline = True
         Me.txtPhone.Name = "txtPhone"
-        Me.txtPhone.Size = New System.Drawing.Size(159, 18)
-        Me.txtPhone.TabIndex = 25
+        Me.txtPhone.Size = New System.Drawing.Size(159, 17)
+        Me.txtPhone.TabIndex = 1
+        Me.txtPhone.Text = "09120000000"
         '
         'txtEmail
         '
-        Me.txtEmail.BackColor = System.Drawing.Color.FromArgb(CType(CType(233, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(233, Byte), Integer))
+        Me.txtEmail.BackColor = System.Drawing.Color.White
         Me.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtEmail.Location = New System.Drawing.Point(135, 363)
+        Me.txtEmail.Font = New System.Drawing.Font("Microsoft Tai Le", 8.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtEmail.ForeColor = System.Drawing.Color.Silver
+        Me.txtEmail.Location = New System.Drawing.Point(125, 322)
         Me.txtEmail.Multiline = True
         Me.txtEmail.Name = "txtEmail"
-        Me.txtEmail.Size = New System.Drawing.Size(159, 18)
-        Me.txtEmail.TabIndex = 26
+        Me.txtEmail.Size = New System.Drawing.Size(157, 18)
+        Me.txtEmail.TabIndex = 2
+        Me.txtEmail.Text = "sample@gmail.com"
         '
         'txtName
         '
-        Me.txtName.BackColor = System.Drawing.Color.FromArgb(CType(CType(233, Byte), Integer), CType(CType(233, Byte), Integer), CType(CType(233, Byte), Integer))
+        Me.txtName.BackColor = System.Drawing.Color.White
         Me.txtName.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtName.Font = New System.Drawing.Font("Tahoma", 8.25!)
-        Me.txtName.Location = New System.Drawing.Point(135, 301)
+        Me.txtName.Font = New System.Drawing.Font("IRANSans", 8.25!)
+        Me.txtName.ForeColor = System.Drawing.Color.Silver
+        Me.txtName.Location = New System.Drawing.Point(125, 259)
         Me.txtName.Multiline = True
         Me.txtName.Name = "txtName"
         Me.txtName.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.txtName.Size = New System.Drawing.Size(159, 18)
-        Me.txtName.TabIndex = 24
+        Me.txtName.Size = New System.Drawing.Size(157, 18)
+        Me.txtName.TabIndex = 0
+        Me.txtName.Text = "میثم رزمی"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Location = New System.Drawing.Point(4, 645)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(59, 13)
+        Me.Label1.TabIndex = 28
+        Me.Label1.Text = "version 2.0"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global._808Single.My.Resources.Resources.BG
+        Me.BackgroundImage = Global._808Single.My.Resources.Resources._single
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.ClientSize = New System.Drawing.Size(504, 662)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.minimize_icon)
         Me.Controls.Add(Me.txtPhone)
         Me.Controls.Add(Me.txtEmail)
         Me.Controls.Add(Me.txtName)
         Me.Controls.Add(Me.BtnActivateOffline)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.lblStatus)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.close_icon)
         Me.Controls.Add(Me.BtnAbout808)
         Me.Controls.Add(Me.BtnSiteLink)
         Me.Controls.Add(Me.BtnHelp)
@@ -209,9 +245,10 @@ Partial Class Form1
         CType(Me.BtnHelp, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BtnSiteLink, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BtnAbout808, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.close_icon, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BtnActivateOffline, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.minimize_icon, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -222,7 +259,7 @@ Partial Class Form1
     Friend WithEvents BtnHelp As PictureBox
     Friend WithEvents BtnSiteLink As PictureBox
     Friend WithEvents BtnAbout808 As PictureBox
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents close_icon As PictureBox
     Friend WithEvents ToolTip1 As ToolTip
     Friend WithEvents lblStatus As Label
     Friend WithEvents PictureBox2 As PictureBox
@@ -230,4 +267,6 @@ Partial Class Form1
     Friend WithEvents txtPhone As TextBox
     Friend WithEvents txtEmail As TextBox
     Friend WithEvents txtName As TextBox
+    Friend WithEvents minimize_icon As PictureBox
+    Friend WithEvents Label1 As Label
 End Class

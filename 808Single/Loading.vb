@@ -7,6 +7,7 @@ Public Class Loading
     Public workCompleted As Boolean = False
 
     Private Sub Loading_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Label1.Font = CustomFont.GetInstance(10, FontStyle.Regular)
         Dim t As Thread = New Thread(AddressOf dlgStart)
         t.SetApartmentState(ApartmentState.STA)
         t.IsBackground = True
@@ -41,6 +42,9 @@ Public Class Loading
     End Sub
 
     Private Sub Loading_Disposed(sender As Object, e As EventArgs) Handles Me.Disposed
+        workCompleted = True
+    End Sub
+    Private Sub double_clicked_to_close(sender As Object, e As MouseEventArgs) Handles MyBase.DoubleClick
         workCompleted = True
     End Sub
 End Class
