@@ -33,3 +33,7 @@ C:\Users\user6\Desktop\single\source\jadid\808Single\808Single\obj\Release\_808S
 C:\Users\user6\Desktop\single\source\jadid\808Single\808Single\obj\Release\808Single.vbproj.GenerateResource.Cache
 C:\Users\user6\Desktop\single\source\jadid\808Single\808Single\obj\Release\808Single.exe.manifest
 C:\Users\user6\Desktop\single\source\jadid\808Single\808Single\obj\Release\808Single.application
+C:\Users\user6\Desktop\single\source\ghadim\808Single\808Single\bin\Release\808Single.exe.config
+C:\Users\user6\Desktop\single\source\ghadim\808Single\808Single\obj\Release\808Single.exe
+C:\Users\user6\Desktop\single\source\ghadim\808Single\808Single\obj\Release\808Single.xml
+C:\Users\user6\Desktop\single\source\ghadim\808Single\808Single\obj\Release\808Single.pdb

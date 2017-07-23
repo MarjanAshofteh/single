@@ -38,7 +38,9 @@ Partial Class Form1
         Me.txtPhone = New System.Windows.Forms.TextBox()
         Me.txtEmail = New System.Windows.Forms.TextBox()
         Me.txtName = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.PackageTitle = New System.Windows.Forms.Label()
+        Me.lblversion = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
         CType(Me.BtnActivate, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BtnHelp, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BtnSiteLink, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -121,9 +123,9 @@ Partial Class Form1
         '
         Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox2.Location = New System.Drawing.Point(159, 161)
+        Me.PictureBox2.Location = New System.Drawing.Point(169, 220)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(183, 64)
+        Me.PictureBox2.Size = New System.Drawing.Size(165, 45)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 22
         Me.PictureBox2.TabStop = False
@@ -170,7 +172,7 @@ Partial Class Form1
         Me.txtPhone.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtPhone.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPhone.ForeColor = System.Drawing.Color.Silver
-        Me.txtPhone.Location = New System.Drawing.Point(125, 292)
+        Me.txtPhone.Location = New System.Drawing.Point(125, 313)
         Me.txtPhone.MaxLength = 11
         Me.txtPhone.Multiline = True
         Me.txtPhone.Name = "txtPhone"
@@ -184,7 +186,7 @@ Partial Class Form1
         Me.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtEmail.Font = New System.Drawing.Font("Microsoft Tai Le", 8.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtEmail.ForeColor = System.Drawing.Color.Silver
-        Me.txtEmail.Location = New System.Drawing.Point(125, 322)
+        Me.txtEmail.Location = New System.Drawing.Point(125, 343)
         Me.txtEmail.Multiline = True
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.Size = New System.Drawing.Size(157, 18)
@@ -197,7 +199,7 @@ Partial Class Form1
         Me.txtName.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtName.Font = New System.Drawing.Font("IRANSans", 8.25!)
         Me.txtName.ForeColor = System.Drawing.Color.Silver
-        Me.txtName.Location = New System.Drawing.Point(125, 259)
+        Me.txtName.Location = New System.Drawing.Point(125, 280)
         Me.txtName.Multiline = True
         Me.txtName.Name = "txtName"
         Me.txtName.RightToLeft = System.Windows.Forms.RightToLeft.Yes
@@ -205,15 +207,40 @@ Partial Class Form1
         Me.txtName.TabIndex = 0
         Me.txtName.Text = "میثم رزمی"
         '
-        'Label1
+        'PackageTitle
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Location = New System.Drawing.Point(4, 645)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(59, 13)
-        Me.Label1.TabIndex = 28
-        Me.Label1.Text = "version 2.0"
+        Me.PackageTitle.BackColor = System.Drawing.Color.Transparent
+        Me.PackageTitle.Font = New System.Drawing.Font("IRANSans", 11.0!, System.Drawing.FontStyle.Bold)
+        Me.PackageTitle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.PackageTitle.Location = New System.Drawing.Point(47, 142)
+        Me.PackageTitle.Name = "PackageTitle"
+        Me.PackageTitle.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.PackageTitle.Size = New System.Drawing.Size(407, 75)
+        Me.PackageTitle.TabIndex = 31
+        Me.PackageTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.PackageTitle.UseCompatibleTextRendering = True
+        '
+        'lblversion
+        '
+        Me.lblversion.AutoSize = True
+        Me.lblversion.BackColor = System.Drawing.Color.Transparent
+        Me.lblversion.Font = New System.Drawing.Font("Tahoma", 8.25!)
+        Me.lblversion.Location = New System.Drawing.Point(51, 646)
+        Me.lblversion.Name = "lblversion"
+        Me.lblversion.Size = New System.Drawing.Size(23, 13)
+        Me.lblversion.TabIndex = 33
+        Me.lblversion.Text = "2.0"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.BackColor = System.Drawing.Color.Transparent
+        Me.Label11.Font = New System.Drawing.Font("Tahoma", 8.25!)
+        Me.Label11.Location = New System.Drawing.Point(3, 646)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(42, 13)
+        Me.Label11.TabIndex = 32
+        Me.Label11.Text = "version"
         '
         'Form1
         '
@@ -222,7 +249,9 @@ Partial Class Form1
         Me.BackgroundImage = Global._808Single.My.Resources.Resources._single
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.ClientSize = New System.Drawing.Size(504, 662)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.lblversion)
+        Me.Controls.Add(Me.Label11)
+        Me.Controls.Add(Me.PackageTitle)
         Me.Controls.Add(Me.minimize_icon)
         Me.Controls.Add(Me.txtPhone)
         Me.Controls.Add(Me.txtEmail)
@@ -240,7 +269,7 @@ Partial Class Form1
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Form1"
+        Me.Text = "808 single Lock"
         CType(Me.BtnActivate, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BtnHelp, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BtnSiteLink, System.ComponentModel.ISupportInitialize).EndInit()
@@ -268,5 +297,7 @@ Partial Class Form1
     Friend WithEvents txtEmail As TextBox
     Friend WithEvents txtName As TextBox
     Friend WithEvents minimize_icon As PictureBox
-    Friend WithEvents Label1 As Label
+    Friend WithEvents PackageTitle As Label
+    Friend WithEvents lblversion As Label
+    Friend WithEvents Label11 As Label
 End Class

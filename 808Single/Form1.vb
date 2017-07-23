@@ -38,6 +38,11 @@ Public Class Form1
         serverURI = SettingItems(0)
         PackageCode = SettingItems(2).ToLower.Trim
         CheckumBin = SettingItems(4)
+        PackageName = SettingItems(6).ToLower.Trim
+        DataVersion = SettingItems(8).ToLower.Trim
+        PackageTitle.Text = PackageName
+        AppVersion = lblversion.Text
+        Me.Text = "808 single Lock - " & PackageName
 
         If (FileIO.FileSystem.FileExists(AppDomain.CurrentDomain.BaseDirectory & "reset.reset")) = True Then
             File.Delete(AppDomain.CurrentDomain.BaseDirectory & "reset.reset")
@@ -131,7 +136,7 @@ Public Class Form1
                     lblStatus.ForeColor = Color.Red
                 Else
                     Dim ranber As Long = GetRandom(10000, 100000)
-                    Dim hash As String = Web.HttpUtility.UrlEncodeUnicode(jsonSerilizer(1, PUID, TxtPass.Text.Trim.ToLower, PackageCode, ranber, txtName.Text, txtEmail.Text, txtPhone.Text))
+                    Dim hash As String = Web.HttpUtility.UrlEncodeUnicode(jsonSerilizer(1, PUID, TxtPass.Text.Trim.ToLower, PackageCode, ranber, txtName.Text, txtEmail.Text, txtPhone.Text, PackageName, DataVersion, AppVersion))
                     Dim response As String = HttpPostRequest(serverURI, "hash=" & hash.Trim)
 
                     Dim result As New jsonStructure
@@ -436,4 +441,5 @@ Public Class Form1
             txtEmail.ForeColor = Color.Silver
         End If
     End Sub
+
 End Class
