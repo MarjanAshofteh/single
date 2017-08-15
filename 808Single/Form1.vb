@@ -25,7 +25,7 @@ Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim t As Thread = New Thread(AddressOf LoadOpacity)
         t.SetApartmentState(ApartmentState.STA)
-        t.Start()
+            t.Start()
 
         binPath = Path.Combine(Environment.CurrentDirectory, "data\data.bin")
         detailsPath = Path.Combine(Environment.CurrentDirectory, "data\details.bin")
@@ -38,11 +38,15 @@ Public Class Form1
         serverURI = SettingItems(0)
         PackageCode = SettingItems(2).ToLower.Trim
         CheckumBin = SettingItems(4)
-        PackageName = SettingItems(6).ToLower.Trim
-        DataVersion = SettingItems(8).ToLower.Trim
+        If SettingItems.Length > 6 Then
+            PackageName = SettingItems(6).Trim
+        End If
+        If SettingItems.Length > 8 Then
+            DataVersion = SettingItems(8).ToLower.Trim
+        End If
         PackageTitle.Text = PackageName
         AppVersion = lblversion.Text
-        Me.Text = "808 single Lock - " & PackageName
+        Me.Text = PackageName & " - 808 Lock"
 
         If (FileIO.FileSystem.FileExists(AppDomain.CurrentDomain.BaseDirectory & "reset.reset")) = True Then
             File.Delete(AppDomain.CurrentDomain.BaseDirectory & "reset.reset")
@@ -78,6 +82,15 @@ Public Class Form1
             Me.WindowState = FormWindowState.Minimized
             Me.Opacity = 0
             runFile()
+
+            'Dim threadCheckPUID As Thread = New Thread(AddressOf checkPUID)
+            'threadCheckPUID.SetApartmentState(ApartmentState.MTA)
+            'threadCheckPUID.Priority = ThreadPriority.BelowNormal
+            'threadCheckPUID.Start()
+            '
+            'While threadCheckPUID.IsAlive = True
+            '    Thread.Sleep(500)
+            'End While
         End If
 
         If My.Computer.Network.IsAvailable And get_setting("version", "") <> "" Then
@@ -326,6 +339,8 @@ Public Class Form1
         set_setting("package", PackageCode)
 
         If get_setting("version", "") = PUID Then
+            lblStatus.Text = "فعال سازی آفلاین انجام شد!"
+            lblStatus.ForeColor = Color.Green
             runFile()
         End If
 

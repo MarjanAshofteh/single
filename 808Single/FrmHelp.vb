@@ -30,4 +30,28 @@ Public Class FrmHelp
         t.SetApartmentState(ApartmentState.STA)
         t.Start()
     End Sub
+    Private Sub btn_about_Click(sender As Object, e As EventArgs) Handles btn_about.Click
+        Dim webAddress As String = "http://civil808.com/page/about"
+        Process.Start(webAddress)
+    End Sub
+
+    Private Sub btn_site_Click(sender As Object, e As EventArgs) Handles btn_site.Click
+        Dim webAddress As String = "http://civil808.com/"
+        Process.Start(webAddress)
+    End Sub
+
+    Private Sub dotnet_Click(sender As Object, e As EventArgs) Handles dotnet.Click
+        Dim webAddress As String = "http://lock.civil808.com/repo/dotnet.exe"
+        Process.Start(webAddress)
+    End Sub
+
+    Private Sub codec_Click(sender As Object, e As EventArgs) Handles codec.Click
+        Dim webAddress As String = "http://lock.civil808.com/repo/Codec.exe"
+        Process.Start(webAddress)
+    End Sub
+
+    Private Sub iran_Click(sender As Object, e As EventArgs) Handles iran.Click
+        Dim webAddress As String = "http://lock.civil808.com/repo/IRANSans.ttf"
+        Process.Start(webAddress)
+    End Sub
 End Class

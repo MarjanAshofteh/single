@@ -53,14 +53,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="808Single.exe" size="5075832">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="808Single.exe" size="696184">
       <assemblyIdentity name="808Single" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>BpJfpqcnzxoDTzh+mYvnNoLOomU=</dsig:DigestValue>
+        <dsig:DigestValue>gdD/oAdfxrp/pb2VK6Xy25A9uHY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -80,15 +80,6 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
       <dsig:DigestValue>L3I9DOWeEB/P2DpzjuMQmiwf8bM=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="frmLogoBackground.png" size="8842">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>4J8tL55lSUXbCSBVJ36W7PTIrIk=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

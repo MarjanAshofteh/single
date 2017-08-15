@@ -220,8 +220,19 @@ Module functions
             Exit Sub
         ElseIf result.ranber = (ranber * 73) - 320 And (CInt(result.response) = 4 Or CInt(result.response) = 2) And get_setting("version", "") <> ""
             set_setting("version", "")
+            MsgBox("اطلاعات شما در دیتابیس وجود ندارد." & vbNewLine & "اگر خطایی رخ داده است می توانید دوباره فعال سازی را انجام دهید و یا اینکه یا پشتیبانی تماس بگیرید.", MsgBoxStyle.Exclamation, "خطا")
             Application.Restart()
         End If
 
+    End Sub
+
+    Public Sub checkPUID()
+        Dim tempRegVal As String = get_setting("version", "").ToString
+        GETPUID()
+        If tempRegVal <> PUID Then
+            set_setting("version", "")
+            MsgBox("تغییراتی در سیستم شما بوجود آمده است و پکیج غیر فعال شده است." & vbNewLine & "اگر خطایی رخ داده است می توانید دوباره فعال سازی را انجام دهید و یا اینکه یا پشتیبانی تماس بگیرید.", MsgBoxStyle.Exclamation, "خطا")
+            Application.Restart()
+        End If
     End Sub
 End Module

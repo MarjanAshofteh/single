@@ -215,7 +215,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="808.ico" />
-    <Content Include="frmLogoBackground.png" />
     <None Include="resources\IRANSans.ttf" />
     <None Include="resources\loding.gif" />
     <None Include="resources\help.png" />

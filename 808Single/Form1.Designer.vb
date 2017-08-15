@@ -22,7 +22,6 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.TxtPass = New System.Windows.Forms.TextBox()
         Me.BtnActivate = New System.Windows.Forms.PictureBox()
@@ -30,7 +29,6 @@ Partial Class Form1
         Me.BtnSiteLink = New System.Windows.Forms.PictureBox()
         Me.BtnAbout808 = New System.Windows.Forms.PictureBox()
         Me.close_icon = New System.Windows.Forms.PictureBox()
-        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.BtnActivateOffline = New System.Windows.Forms.PictureBox()
         Me.minimize_icon = New System.Windows.Forms.PictureBox()
@@ -66,12 +64,11 @@ Partial Class Form1
         '
         Me.BtnActivate.BackColor = System.Drawing.Color.Transparent
         Me.BtnActivate.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BtnActivate.Location = New System.Drawing.Point(155, 436)
+        Me.BtnActivate.Location = New System.Drawing.Point(155, 437)
         Me.BtnActivate.Name = "BtnActivate"
         Me.BtnActivate.Size = New System.Drawing.Size(193, 39)
         Me.BtnActivate.TabIndex = 1
         Me.BtnActivate.TabStop = False
-        Me.ToolTip1.SetToolTip(Me.BtnActivate, "فعالسازی آنلاین")
         '
         'BtnHelp
         '
@@ -82,7 +79,6 @@ Partial Class Form1
         Me.BtnHelp.Size = New System.Drawing.Size(105, 22)
         Me.BtnHelp.TabIndex = 2
         Me.BtnHelp.TabStop = False
-        Me.ToolTip1.SetToolTip(Me.BtnHelp, "راهنما")
         '
         'BtnSiteLink
         '
@@ -93,7 +89,6 @@ Partial Class Form1
         Me.BtnSiteLink.Size = New System.Drawing.Size(105, 22)
         Me.BtnSiteLink.TabIndex = 3
         Me.BtnSiteLink.TabStop = False
-        Me.ToolTip1.SetToolTip(Me.BtnSiteLink, "ورود به سایت")
         '
         'BtnAbout808
         '
@@ -104,7 +99,6 @@ Partial Class Form1
         Me.BtnAbout808.Size = New System.Drawing.Size(105, 22)
         Me.BtnAbout808.TabIndex = 4
         Me.BtnAbout808.TabStop = False
-        Me.ToolTip1.SetToolTip(Me.BtnAbout808, "درباره 808")
         '
         'close_icon
         '
@@ -117,7 +111,6 @@ Partial Class Form1
         Me.close_icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.close_icon.TabIndex = 6
         Me.close_icon.TabStop = False
-        Me.ToolTip1.SetToolTip(Me.close_icon, "Close")
         '
         'PictureBox2
         '
@@ -129,18 +122,16 @@ Partial Class Form1
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 22
         Me.PictureBox2.TabStop = False
-        Me.ToolTip1.SetToolTip(Me.PictureBox2, "پیش نمایش (دمو)")
         '
         'BtnActivateOffline
         '
         Me.BtnActivateOffline.BackColor = System.Drawing.Color.Transparent
         Me.BtnActivateOffline.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BtnActivateOffline.Location = New System.Drawing.Point(176, 549)
+        Me.BtnActivateOffline.Location = New System.Drawing.Point(176, 550)
         Me.BtnActivateOffline.Name = "BtnActivateOffline"
         Me.BtnActivateOffline.Size = New System.Drawing.Size(151, 30)
         Me.BtnActivateOffline.TabIndex = 23
         Me.BtnActivateOffline.TabStop = False
-        Me.ToolTip1.SetToolTip(Me.BtnActivateOffline, "فعالسازی آفلاین")
         '
         'minimize_icon
         '
@@ -153,7 +144,6 @@ Partial Class Form1
         Me.minimize_icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.minimize_icon.TabIndex = 27
         Me.minimize_icon.TabStop = False
-        Me.ToolTip1.SetToolTip(Me.minimize_icon, "Minimize")
         '
         'lblStatus
         '
@@ -162,6 +152,7 @@ Partial Class Form1
         Me.lblStatus.ForeColor = System.Drawing.SystemColors.ControlDarkDark
         Me.lblStatus.Location = New System.Drawing.Point(77, 478)
         Me.lblStatus.Name = "lblStatus"
+        Me.lblStatus.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.lblStatus.Size = New System.Drawing.Size(351, 31)
         Me.lblStatus.TabIndex = 21
         Me.lblStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -172,7 +163,7 @@ Partial Class Form1
         Me.txtPhone.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtPhone.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPhone.ForeColor = System.Drawing.Color.Silver
-        Me.txtPhone.Location = New System.Drawing.Point(125, 313)
+        Me.txtPhone.Location = New System.Drawing.Point(125, 314)
         Me.txtPhone.MaxLength = 11
         Me.txtPhone.Multiline = True
         Me.txtPhone.Name = "txtPhone"
@@ -186,7 +177,7 @@ Partial Class Form1
         Me.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtEmail.Font = New System.Drawing.Font("Microsoft Tai Le", 8.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtEmail.ForeColor = System.Drawing.Color.Silver
-        Me.txtEmail.Location = New System.Drawing.Point(125, 343)
+        Me.txtEmail.Location = New System.Drawing.Point(125, 344)
         Me.txtEmail.Multiline = True
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.Size = New System.Drawing.Size(157, 18)
@@ -199,7 +190,7 @@ Partial Class Form1
         Me.txtName.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtName.Font = New System.Drawing.Font("IRANSans", 8.25!)
         Me.txtName.ForeColor = System.Drawing.Color.Silver
-        Me.txtName.Location = New System.Drawing.Point(125, 280)
+        Me.txtName.Location = New System.Drawing.Point(125, 281)
         Me.txtName.Multiline = True
         Me.txtName.Name = "txtName"
         Me.txtName.RightToLeft = System.Windows.Forms.RightToLeft.Yes
@@ -225,7 +216,7 @@ Partial Class Form1
         Me.lblversion.AutoSize = True
         Me.lblversion.BackColor = System.Drawing.Color.Transparent
         Me.lblversion.Font = New System.Drawing.Font("Tahoma", 8.25!)
-        Me.lblversion.Location = New System.Drawing.Point(51, 646)
+        Me.lblversion.Location = New System.Drawing.Point(48, 646)
         Me.lblversion.Name = "lblversion"
         Me.lblversion.Size = New System.Drawing.Size(23, 13)
         Me.lblversion.TabIndex = 33
@@ -246,7 +237,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global._808Single.My.Resources.Resources._single
+        Me.BackgroundImage = Global._808Single.My.Resources.Resources.main_bg
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.ClientSize = New System.Drawing.Size(504, 662)
         Me.Controls.Add(Me.lblversion)
@@ -289,7 +280,6 @@ Partial Class Form1
     Friend WithEvents BtnSiteLink As PictureBox
     Friend WithEvents BtnAbout808 As PictureBox
     Friend WithEvents close_icon As PictureBox
-    Friend WithEvents ToolTip1 As ToolTip
     Friend WithEvents lblStatus As Label
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents BtnActivateOffline As PictureBox

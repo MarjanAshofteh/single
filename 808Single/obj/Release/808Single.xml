@@ -22,11 +22,6 @@
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
-<member name="P:_808Single.My.Resources.Resources._single">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
 <member name="P:_808Single.My.Resources.Resources.close">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -42,12 +37,7 @@
   Looks up a localized resource of type System.Byte[].
 </summary>
 </member>
-<member name="P:_808Single.My.Resources.Resources.loding">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:_808Single.My.Resources.Resources.loding1">
+<member name="P:_808Single.My.Resources.Resources.main_bg">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
